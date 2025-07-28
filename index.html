@@ -13,7 +13,57 @@
 <body>
     <div id="container">
         <!--ilustracaode gerador de senhas -->
-        <img src="gerador de senhas/src/imagem/download.png">
+        <img src="gerador de senhas/src/imagem/download.png" id="passwor_img" alt="">
+        <!--titulo-->
+        <h1 id="title">Gerador de senha</h1>
+        <!--conteiner de exibicao da senha-->
+        <div id="passwor_container">
+            <span id="password"></span>
+            <!--botao de copia-->
+            <button id="copy">
+                <i class="fa-copy"></i>
+            </button>
+        </div>
+
+
+        <!--opcoes de senha-->
+        <div id="passwor_items">
+        <!--campo de entrada para o comprimento da semha-->
+        <div class="item">
+            <input id="size" name="size" type="number">
+            <label for="size">
+                comprimento da senha
+            </label>
+        </div>
+        <!--caixa de selecao para letra maiuscula-->
+        <div class="item">
+            <input type="checkbox" name="include_uppercase" id="include_uppercase">
+            <label for="include_uppercase">
+                incluir letras maiusculas
+            </label>
+        </div>
+        <!--incluir pelo menos uma letra maiuscula-->
+        <div class="item">
+            <input type="checkbox" name="include_lowercase" id="include_lowercase">
+            <label for="include_lowercase">
+                incluir pelo menos uma letra maiuscula
+            </label>
+        </div>
+        <!--incluir pelo menos um numero-->
+        <div class="item">
+            <input type="checkbox" name="include_number" id="include_number">
+            <label for="include_number">
+                incluir numero
+            </label>
+        </div>
+        <!--incluir caractere especial-->
+        <div class="item">include_especial_character">
+     <input type="checkbox" name="include_especial_character" id="
+                incluir numero">
+            </label>
+        </div>
+        </div>
+
     </div>
 </body>
 </html>
